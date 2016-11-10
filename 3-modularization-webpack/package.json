@@ -1,0 +1,18 @@
+{
+  "name": "2-modularization",
+  "version": "1.0.0",
+  "description": "",
+  "main": "app.js",
+  "scripts": {
+    "build": "rollup --input src/app.js --output bundle.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Christian Kohler",
+  "license": "ISC",
+  "dependencies": {
+    "bootstrap": "^3.3.7"
+  },
+  "devDependencies": {
+    "rollup": "^0.36.3"
+  }
+}
