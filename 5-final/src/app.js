@@ -1,3 +1,5 @@
+import '../styles.css';
+import 'bootstrap/dist/css/bootstrap.min.css';
 import { TodoStore } from './todo-store';
 import { todoElement } from './todo-element';
  
