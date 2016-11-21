@@ -2,7 +2,8 @@
 ## Todo
 1. Run Todo App
 1. Add Todo and check console log in dev tools
-1. Install ES Linting
+1. Install eslint with npm
+1. Run eslint --init
     - Answer question about..
     - ECMAScript 6 features -> yes
     - ES6 Modules -> yes
@@ -14,7 +15,7 @@
     - Line Endings -> Unix
     - Semicolons -> yes
     - Format: Javascript
-1. Run ES Lint Init
+1. Add npm step "lint"
 
 ```
 node_modules/.bin/eslint **/*.js

@@ -1,19 +1,4 @@
 /**
- * Compares todos for sorting
- */
-function statusComparator(todo1, todo2) {
-    let result = 0;
-
-    if(todo1.done && !todo2.done){
-        result = 1;
-    } else if(!todo1.done && todo2.done){
-        result = -1;
-    }
-
-    return result;
-};
-
-/**
  * TodoStore handles and stores all todos
  */
 class TodoStore {
@@ -57,7 +42,6 @@ class TodoStore {
 
         if (matchingTodos.length === 1) {
             matchingTodos[0].done = true;
-            this._todos.sort(statusComparator);
         } else {
             throw new Error(`No Todo item with id ${id} found!`);
         }

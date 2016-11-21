@@ -7,37 +7,37 @@ import { todoElement } from './todo-element';
  * TodoComponent renders todos and handles events
  */
 class TodoAppComponent {
-    constructor(container) {
-        this.container = container;
-        this.todoStore = new TodoStore();
-        this.todoStore.subscribe(todos => this.render(todos));
-    }
+	constructor(container) {
+		this.container = container;
+		this.todoStore = new TodoStore();
+		this.todoStore.subscribe(todos => this.render(todos));
+	}
     
-    onKeyUp(event) {
-        const isEnterKey = event.keyCode === 13;
+	onKeyUp(event) {
+		const isEnterKey = event.keyCode === 13;
 
-        if (isEnterKey) {
-            this.onAdd();
-        }
-    }
+		if (isEnterKey) {
+			this.onAdd();
+		}
+	}
 
-    onAdd() {
-        const description = document.querySelector('#new-todo-description').value;
-        if (description) {
-            this.todoStore.addTodo(description);
-        }
-    }
+	onAdd() {
+		const description = document.querySelector('#new-todo-description').value;
+		if (description) {
+			this.todoStore.addTodo(description);
+		}
+	}
 
-    onSetDone(todoId) {
-        this.todoStore.setDone(todoId);
-    }
+	onSetDone(todoId) {
+		this.todoStore.setDone(todoId);
+	}
 
-    onClear() {
-        this.todoStore.clear();
-    }
+	onClear() {
+		this.todoStore.clear();
+	}
 
-    render(todos) {
-        this.container.innerHTML = `
+	render(todos) {
+		this.container.innerHTML = `
             <h1>JS Enterprise ToDo</h1>
 
             <div id="add-todo-panel" class="input-group">
@@ -59,7 +59,7 @@ class TodoAppComponent {
                 <button class="btn btn-danger" onclick="todo.onClear()">Clear</button>
             </div>
         `;
-    }
+	}
 }
 
- window.todo = new TodoAppComponent(document.querySelector('#todo-app'));
+window.todo = new TodoAppComponent(document.querySelector('#todo-app'));

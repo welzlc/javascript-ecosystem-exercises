@@ -1,3 +1,5 @@
+import { statusComparator } from './status-comparator';
+
 /**
  * TodoStore handles and stores all todos
  */
@@ -24,7 +26,7 @@ export class TodoStore {
 		return this.idCounter++;
 	}
 
-	addTodo(Description) {
+	addTodo(description) {
 		const todoObject = {
 			timeStamp: new Date(),
 			description: description,
@@ -42,6 +44,7 @@ export class TodoStore {
 
 		if (matchingTodos.length === 1) {
 			matchingTodos[0].done = true;
+			this._todos.sort(statusComparator);
 		} else {
 			throw new Error(`No Todo item with id ${id} found!`);
 		}
