@@ -12,6 +12,8 @@
 1. Add style / css / file loaders
 1. Configure that css files are handled
 
+Hint: Fonts have to be loaded with the "file-loader".
+
 ## Use dist folder
 1. Configure dist folder output
 1. Add html-webpack-plugin
