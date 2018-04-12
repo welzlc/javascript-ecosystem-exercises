@@ -1,21 +1,38 @@
-const HtmlWebpackPlugin = require('html-webpack-plugin');
+const path = require('path');
+const HtmlWebpackPlugin = require('html-webpack-plugin')
 
-const config = {
-  entry: './src/app.js',
-  output: {
-    filename: 'bundle.js',
-    path: './dist'
-  },
-  module: {
-    loaders: [
-      { test: /\.js$/, loader: 'babel-loader?presets[]=es2015' },
-      { test: /\.css$/, loader: "style-loader!css-loader" },
-      { test: /.jpe?g$|.gif$|.png$|.svg$|.woff$|.woff2$|.ttf$|.eot$/, loader: "file-loader" }
+module.exports = {
+    entry: './src/app.js',
+    output: {
+        path: path.resolve(__dirname, 'dist'),
+        filename: 'bundle.js'
+    },
+    module: {
+        rules: [
+            {
+                test: /\.js$/,
+                exclude: /(node_modules)/,
+                use: {
+                    loader: 'babel-loader',
+                    options: {
+                        presets: ['env']
+                    }
+                }
+            },{
+                test: /\.css$/,
+                use: [
+                    { loader: "style-loader" },
+                    { loader: "css-loader" }
+                ]
+            },{
+                test: /\.(ttf|eot|woff|woff2|svg)$/,
+                loader: "file-loader"
+            }
+        ]
+    },
+    plugins: [
+        new HtmlWebpackPlugin({
+            template: './index.html'
+        })
     ]
-  },
-  plugins: [
-    new HtmlWebpackPlugin({template: './index.html'})
-  ]
 };
-
-module.exports = config;
