@@ -1,18 +1,19 @@
 {
-  "name": "2-modularization",
+  "name": "1-dependency",
   "version": "1.0.0",
-  "description": "",
+  "description": "1. Start todo app (use a static webserver) and try it out 1. Init a package.json 1. Install bootstrap as dependency 1. Link bootstrap.min.css in index.html",
   "main": "app.js",
   "scripts": {
-    "build": "rollup --input src/app.js --output bundle.js",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "rollup src/app.js -o bundle.js --f iife"
   },
-  "author": "Christian Kohler",
+  "keywords": [],
+  "author": "",
   "license": "ISC",
   "dependencies": {
     "bootstrap": "^3.3.7"
   },
   "devDependencies": {
-    "rollup": "^0.36.3"
+    "rollup": "^0.57.1"
   }
 }

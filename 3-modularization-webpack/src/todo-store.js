@@ -1,7 +1,7 @@
 /**
  * TodoStore handles and stores all todos
  */
-export class TodoStore {
+export default class TodoStore {
 
     constructor() {
         this.idCounter = 0;
@@ -17,7 +17,7 @@ export class TodoStore {
     notify() {
         this.subscribers.forEach(subscriber => {
             subscriber.call(subscriber, this.todos);
-        });
+    });
     }
 
     getAndIncrementIdCounter() {
