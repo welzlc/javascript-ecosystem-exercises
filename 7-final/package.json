@@ -1,5 +1,5 @@
 {
-  "name": "1-dependency",
+  "name": "ToDoApp",
   "version": "1.0.0",
   "description": "1. Start todo app (use a static webserver) and try it out 1. Init a package.json 1. Install bootstrap as dependency 1. Link bootstrap.min.css in index.html",
   "main": "app.js",
