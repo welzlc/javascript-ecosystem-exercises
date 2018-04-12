@@ -3,7 +3,7 @@ import { statusComparator } from './status-comparator';
 /**
  * TodoStore handles and stores all todos
  */
-export class TodoStore {
+export default class TodoStore {
 
     constructor() {
         this.idCounter = 0;
