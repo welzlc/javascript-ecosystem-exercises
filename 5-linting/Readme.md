@@ -16,10 +16,9 @@
     - Semicolons -> yes
     - Format: Javascript
 1. Add npm step "lint"
+1. Lint your src folder: ```node_modules/.bin/eslint src/**/*.js```
+1. You might want to remove the "indent" rule
 
-```
-node_modules/.bin/eslint **/*.js
-```
 
 ## Documentation
 [http://eslint.org/](http://eslint.org/)
