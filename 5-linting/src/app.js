@@ -5,4 +5,4 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 /**
  * TodoComponent renders todos and handles events
  */
- window.todo = new TodoAppComponent(document.querySelector('#todo-app'));
+window.todo = new TodoAppComponent(document.querySelector('#todo-app'));
