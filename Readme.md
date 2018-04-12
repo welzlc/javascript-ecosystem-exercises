@@ -18,3 +18,11 @@ Replace the existing RollupJS build with Webpack.
 ### 4. Add loaders and plugins to Webpack
 Add a babel transpiler and the style loader as plugins.
 [Read more](4-modularization-webpack-loaders/Readme.md)
+
+### 5. Add esLint
+Add the esLint plugin for static code analyses
+[Read more](5-linting/Readme.md)
+
+### 6. Testing
+Add some tests for existing and new functionality
+[Read more](6-testing/Readme.md)
