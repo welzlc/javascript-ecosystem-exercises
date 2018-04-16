@@ -4,4 +4,5 @@ nodejs:
 
 script:
   - "cd 7-final"
+  - "npm install"
   - "npm test"
