@@ -3,4 +3,5 @@ nodejs:
   - "8.9"
 
 script:
-  - "cd 7-final & npm test"
+  - "cd 7-final"
+  - "npm test"
