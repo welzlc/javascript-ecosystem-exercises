@@ -1,3 +1,5 @@
+[![Build Status](https://travis-ci.org/webplatformz/modern-js-dev-exercises.svg?branch=master)](https://travis-ci.org/webplatformz/modern-js-dev-exercises)
+
 # Modern JavaScript Workflow Example App
 You can find a hosted version of the slides [here](https://webplatformz.github.io/modern-js-dev/).
 
