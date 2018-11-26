@@ -12,7 +12,7 @@
 1. Add style / css / file loaders
 1. Configure that css files are handled
 
-Hint: Fonts have to be loaded with the "file-loader".
+Hint: Styles can be imported like this `ìmport '../path/..'`, and webpack needs a "file-loader" to properly load fonts.
 
 ## Use dist folder
 1. Configure dist folder output
