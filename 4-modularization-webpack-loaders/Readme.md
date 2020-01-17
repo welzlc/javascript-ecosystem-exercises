@@ -1,8 +1,8 @@
 # Lesson: Webpack Loaders
 ## Transpiling ES6 to ES5
 1. Create webpack config and define entry file and bundle path
-1. Install babel-loader as dev dependency
-1. Add babel-loader, babel-preset-env, babel-core to webpack config
+1. Install babel-loader, @babel/preset-env, @babel/core as dev dependency
+1. Add babel-loader to webpack config
 1. Adjust npm script "build"
 1. Generate bundle with webpack
 1. Confirm that bundle is ES5 code

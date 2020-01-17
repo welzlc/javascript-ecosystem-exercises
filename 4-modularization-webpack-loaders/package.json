@@ -2,10 +2,10 @@
   "name": "todoapp",
   "version": "0.0.4",
   "description": "1. Start todo app (use a static webserver) and try it out 1. Init a package.json 1. Install bootstrap as dependency 1. Link bootstrap.min.css in index.html",
-  "main": "app.js",
+  "main": "src/app.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "build": "webpack -d"
+    "build": "webpack -d --entry ./src/app.js --output bundle.js"
   },
   "keywords": [],
   "author": "",
@@ -14,7 +14,7 @@
     "bootstrap": "^3.3.7"
   },
   "devDependencies": {
-    "webpack": "^4.5.0",
-    "webpack-cli": "^2.0.14"
+    "webpack": "^4.41.5",
+    "webpack-cli": "^3.3.10"
   }
 }
