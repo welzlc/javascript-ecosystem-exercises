@@ -1,7 +1,7 @@
 # Lesson: Testing
 ## Todo
 1. Install Jest from npm. __Notice__: We have added a .babelrc file for 
-you because jest needs it to run tests written in ES2015.
+you because jest needs it to run tests written in newer versions of JavaScript.
 1. Add Jest to npm script "test"
 1. Run Jest
 1. Implement Test "should sort todos by status"
