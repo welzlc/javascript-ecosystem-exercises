@@ -1,8 +1,8 @@
 language: node_js
 nodejs:
-  - "8.9"
+  - "12.14"
 
 script:
   - "cd 7-final"
-  - "npm install"
+  - "npm ci"
   - "npm run build"
