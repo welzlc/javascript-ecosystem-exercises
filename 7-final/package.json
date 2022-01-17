@@ -5,9 +5,9 @@
   "main": "app.js",
   "scripts": {
     "test": "jest",
-    "build": "npm run lint && npm test && webpack -d",
+    "build": "npm run lint && npm test && webpack --mode development",
     "lint": "eslint src/**/*.js",
-    "build:prod": "npm run lint && npm test && webpack -p"
+    "build:prod": "npm run lint && npm test && webpack"
   },
   "keywords": [],
   "author": "",
