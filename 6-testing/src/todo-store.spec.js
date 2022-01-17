@@ -1,4 +1,4 @@
-import TodoStore from './todo-store';
+import { TodoStore } from './todo-store';
 
 describe('TodoStore', function () {
     const store = new TodoStore();

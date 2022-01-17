@@ -1,4 +1,4 @@
-import TodoStore from './todo-store';
+import { TodoStore } from './todo-store';
 import {todoElement} from './todo-element';
 
 export default class TodoAppComponent {
