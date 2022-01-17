@@ -1,7 +1,7 @@
 /**
  * TodoStore handles and stores all todos
  */
-export default class TodoStore {
+export class TodoStore {
 
     constructor() {
         this.idCounter = 0;
