@@ -1,8 +1,0 @@
-language: node_js
-nodejs:
-  - "12.14"
-
-script:
-  - "cd 7-final"
-  - "npm ci"
-  - "npm run build"
