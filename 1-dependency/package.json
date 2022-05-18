@@ -1,0 +1,14 @@
+{
+  "name": "1-dependency",
+  "version": "1.0.0",
+  "description": "1. Start todo app (use a static webserver) and try it out\r 1. Init a package.json\r 1. Install bootstrap as dependency\r 1. Link bootstrap.min.css in index.html",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "welzlc",
+  "license": "ISC",
+  "dependencies": {
+    "bootstrap": "3.3.7"
+  }
+}

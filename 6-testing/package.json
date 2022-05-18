@@ -4,7 +4,7 @@
   "description": "1. Start todo app (use a static webserver) and try it out 1. Init a package.json 1. Install bootstrap as dependency 1. Link bootstrap.min.css in index.html",
   "main": "app.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
+    "test": "jest",
     "build": "npm run lint && webpack --mode development",
     "lint": "eslint src/**/*.js"
   },
@@ -22,6 +22,7 @@
     "eslint": "8.7.0",
     "file-loader": "6.2.0",
     "html-webpack-plugin": "5.5.0",
+    "jest": "^28.1.0",
     "style-loader": "3.3.1",
     "webpack": "5.66.0",
     "webpack-cli": "4.9.1"

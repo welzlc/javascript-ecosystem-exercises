@@ -5,7 +5,7 @@
   "main": "src/app.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "build": "webpack --mode development --entry ./src/app.js"
+    "build": "webpack --mode development"
   },
   "keywords": [],
   "author": "",
@@ -14,7 +14,14 @@
     "bootstrap": "^3.3.7"
   },
   "devDependencies": {
-    "webpack": "5.66.0",
+    "@babel/core": "^7.17.12",
+    "@babel/preset-env": "^7.17.12",
+    "babel-loader": "^8.2.5",
+    "css-loader": "^6.7.1",
+    "file-loader": "^6.2.0",
+    "html-webpack-plugin": "^5.5.0",
+    "style-loader": "^3.3.1",
+    "webpack": "^5.66.0",
     "webpack-cli": "4.9.1"
   }
 }

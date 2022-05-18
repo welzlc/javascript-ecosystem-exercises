@@ -1,13 +1,10 @@
-import { TodoStore } from "./todo-store";
-import { todoElement } from "./todo-element";
-
-import "../styles.css";
-import "bootstrap/dist/css/bootstrap.min.css";
-
 /**
  * TodoComponent renders todos and handles events
  */
-class TodoAppComponent {
+
+import { todoElement } from "./todo-element";
+import { TodoStore } from "./todo-store";
+export class TodoAppComponent {
   constructor(container) {
     this.container = container;
     this.todoStore = new TodoStore();
@@ -62,5 +59,3 @@ class TodoAppComponent {
         `;
   }
 }
-
-window.todo = new TodoAppComponent(document.querySelector("#todo-app"));

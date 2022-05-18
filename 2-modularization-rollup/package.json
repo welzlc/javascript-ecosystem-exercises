@@ -4,12 +4,14 @@
   "description": "1. Start todo app (use a static webserver) and try it out 1. Init a package.json 1. Install bootstrap as dependency 1. Link bootstrap.min.css in index.html",
   "main": "app.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "bundle": "rollup ./src/app.js --file bundle.js --format iife"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "bootstrap": "^3.3.7"
+    "bootstrap": "^3.3.7",
+    "rollup": "^2.73.0"
   }
 }
